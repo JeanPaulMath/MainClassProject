@@ -1,4 +1,4 @@
-module HelloWorldFX {
+module MainClassProject {
     requires javafx.fxml;
     requires javafx.controls;
 
