@@ -5,8 +5,10 @@ public abstract class Product implements Item {
     private String manufacturer;
     private String name;
 
+    //remember to create a comboBox to select type
     enum Type{ Audio, visual, AudioMobile, VisualMobile;}
     enum Code{AU,VI,AM,VM;}
+
 
     public Product(String prodName){
         this.name = prodName;
