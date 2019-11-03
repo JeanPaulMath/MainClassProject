@@ -1,3 +1,5 @@
+package sample;
+import java.util.HashMap;
 public abstract class Product implements Item {
 
     private int id;
@@ -6,9 +8,6 @@ public abstract class Product implements Item {
     private String name;
 
     //remember to create a comboBox to select type
-    enum Type{ Audio, visual, AudioMobile, VisualMobile;}
-    enum Code{AU,VI,AM,VM;}
-
 
     public Product(String prodName){
         this.name = prodName;
@@ -22,7 +21,7 @@ public abstract class Product implements Item {
         return type;
     }
 
-    @Override
+
     public String toString() {
         return "type:'" + type + '\'' + ", manufacturer:'" + manufacturer + '\'' + ", name:'" + name + '\'' ;
     }
